@@ -5,7 +5,7 @@ let bubble3;
 
 function setup() {
     createCanvas(windowWidth, windowHeight);
-    background(0);
+    //background(0);
     ellipseMode(CENTER);
     // inside parenthesis are arguments for x, y, radius, r, g, b
     bubble1 = new Bubble(width, height, 400, 200, 0, 100);
@@ -14,7 +14,7 @@ function setup() {
 }
 
 function draw() {
-    //background(20);
+    background(20);
     bubble1.move();
     bubble1.show();
     bubble2.move();
