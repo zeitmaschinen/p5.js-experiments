@@ -3,7 +3,7 @@ const density = "Ñ@W#$9876543210?!abc;:+=-,. _";
 let maggie;
 
 function preload() {
-    maggie = loadImage("images/ascii-trek-maggie.jpg");
+    maggie = loadImage("../images/ascii-trek-maggie.jpg");
 }
 
 function setup() {
