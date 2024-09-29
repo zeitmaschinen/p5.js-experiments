@@ -1,5 +1,5 @@
 let progressBars = []; // Array que irá armazenar as barras.
-const containerWidth = 800; // Definindo a largura do container fixo
+let containerWidth;
 
 //---- ATUALIZA AQUI:
 let projectNames = ["UX strategy book", "Do more UX research", "Agile coaching course", "Teach a course"];
@@ -9,6 +9,12 @@ let progressPercentages = [65, 20, 25, 0];
 setup = () => {
   createCanvas(windowWidth, windowHeight);
   colorMode(HSL, 360, 1, 1, 1); // Define o modo de cor HSL para controlar as cores com facilidade.
+
+    // Calcula o containerWidth como metade da largura da janela
+    containerWidth = windowWidth / 1.5;
+    if (containerWidth > 500) {
+      containerWidth = 500;
+    }
 
   // Cria 4 barras de progresso em diferentes posições verticais.
   for (let i = 0; i < 4; i++) {
